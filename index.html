@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Типографія</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="styles/pack.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
@@ -25,17 +27,16 @@
     <meta name="msapplication-TileColor" content="#211515">
     <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#211515">
-    <title>Project Title</title>
   </head>
   <body>
     <div id="myModal" role="dialog" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
-          <form action="#">
-            <div class="modal-header">
-              <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
-              <h3 class="modal-title">Зробити замовлення:</h3>
-            </div>
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+            <h3 class="modal-title">Зробити замовлення:</h3>
+          </div>
+          <form action="">
             <div class="modal-body">
               <div class="form-group">
                 <label for="myEmail">Введіть ваш e-mail</label>
@@ -47,159 +48,303 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Надіслати</button>
+              <button class="btn btn-primary">Надіслати</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="header navbar">
+    <header class="header navbar">
       <div class="container">
-        <div class="navbar-header">
-          <h1 class="logo-h1">TEXT SPASE</h1>
-          <h3 class="logo-h3">LOREN IPSUM</h3>
+        <div class="navbar-header"><a href="#" class="navbar-logo hidden-xs hidden-sm"><img src="/images/fly.png" alt="header picture"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed">Menu</button>
         </div>
-        <div id="navbar-collapse" class="navbar-collapse">
-          <div class="navbar-right">
-            <ul class="nav navbar-nav">
-              <li><img src="/images/favicons/logo.svg" alt="vkontakte" class="social-bottom"></li>
-              <li><img src="/images/favicons/social-network.svg" alt="facebook" class="social-bottom"></li>
-              <li><img src="/images/favicons/social-network-1.svg" alt="facebook" class="social-bottom"></li>
-              <li><img src="/images/favicons/symbol.svg" alt="facebook" class="social-bottom"></li>
-              <li><img src="/images/favicons/symbol-1.svg" alt="facebook" class="social-bottom"></li>
-              <li><img src="/images/favicons/share.svg" alt="facebook" class="social-bottom"></li>
-            </ul>
-            <h2 class="telephone">0 (000) 000-00-00</h2>
-          </div>
+        <div id="navbar-collapse" class="navbar-collapse navbar-fixed-top">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Головна</a></li>
+            <li><a href="#products">Товари</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="logo"><img src="/images/logo.gif" alt="header picture" class="img-logo"></div>
-        <div class="main-text"><br>
-          <h1>Від візитки до білборда</h1>
-          <h2>Цифрова та широкоформатна поліграфія</h2>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br> consequat. </h3><br>
-          <button href="#myModal" role="button" data-toggle="modal" class="main-button">Замовити</button>
+    </header>
+    <main>
+      <div id="home" class="section section-home">
+        <div class="container">
+          <div class="container-line container-line-hor container-line-hor-first hidden-xs hidden-sm"></div>
+          <div class="container-line container-line-hor container-line-hor-last hidden-xs hidden-sm"></div>
+          <div class="container-line container-line-ver container-line-ver-first hidden-xs hidden-sm"></div>
+          <div class="container-line container-line-ver container-line-ver-last hidden-xs hidden-sm"></div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+              <div class="section-home-main"><img src="/images/logo.gif" alt="header picture" class="img-logo">
+                <div class="title-line title-line1"></div>
+                <h1>Від візитки до білборда</h1>
+                <h2>Цифрова та широкоформатна поліграфія</h2>
+                <div class="title-line title-line2"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>consequat. </p>
+                <button href="#myModal" role="button" data-toggle="modal" class="main-button">Замовити							</button>
+              </div>
+            </div>
+          </div><a href="#myModal" role="button" data-toggle="modal" class="section-home-visitka hidden-xs hidden-sm"><img src="/images/visitka.png" alt="visitka"></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div id="container" class="block1">
-        <div class="wrap item color1">
-          <div class="front img">
-            <h4>Візитки</h4><img src="images/visitki.png" alt="visitka" class="width1">
-          </div>
-          <div class="back img back-hor">
-            <h4>Візитки</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item item-ver color2">
-          <div class="front img">
-            <h4>Календарі</h4><img src="images/calendar.png" alt="calendar" class="width4">
-          </div>
-          <div class="back img back-hor">
-            <h4>Календарі</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color3">
-          <div class="front img img-ver">
-            <h4>Плакати</h4><img src="images/plakat_img1.png" alt="plakat" class="width3">
-          </div>
-          <div class="back img img-ver back-ver">
-            <h4>Плакати</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color4">
-          <div class="front img"><img src="images/broshura.png" alt="broshura" class="width4">
-            <h4>Брошури</h4>
-          </div>
-          <div class="back img back-hor">
-            <h4>Брошури</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color5">
-          <div class="front img img-ver"><img src="images/buclet.png" alt="buclet" class="width2">
-            <h4>Буклети</h4>
-          </div>
-          <div class="back img img-ver back-ver">
-            <h4>Буклети</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color6">
-          <div class="front img"><img src="images/papka.png" alt="papka" class="width3">
-            <h4>Папки</h4>
-          </div>
-          <div class="back img back-hor">
-            <h4>Папки</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color7">
-          <div class="front img img-ver">
-            <h4>Конверти</h4><img src="images/konvert.png" alt="konvert" class="width1">
-          </div>
-          <div class="back img img-ver back-ver">
-            <h4>Конверти</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item color8">
-          <div class="front img">
-            <h4>Каталоги</h4><img src="images/katalog.png" alt="katalog" class="width3">
-          </div>
-          <div class="back img back-hor">
-            <h4>Каталоги</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
-          </div>
-        </div>
-        <div class="wrap item item-hor color9">
-          <div class="front img img-ver"><img src="images/flayer.png" alt="flayer" class="width5 img-9-title">
-            <h4>Флаєри</h4>
-          </div>
-          <div class="back img img-ver back-ver">
-            <div class="back-item9-p">
+      <div id="products" class="section section-products">
+        <h3 class="section-title">Наші товари</h3>
+        <div id="container" class="container">
+          <div class="wrap item color1">
+            <div class="front img">
+              <h4>Візитки</h4><img src="images/visitki.png" alt="visitka" class="width1">
+            </div>
+            <div class="back img back-hor">
+              <h4>Візитки</h4>
               <p>термін виконання:  від 3 днів</p>
               <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
             </div>
-            <div class="back-item9-h">
+          </div>
+          <div class="wrap item item-ver color2">
+            <div class="front img">
+              <h4>Календарі</h4><img src="images/calendar.png" alt="calendar" class="width4">
+            </div>
+            <div class="back img back-hor">
+              <h4>Календарі</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color3">
+            <div class="front img img-ver">
+              <h4>Плакати</h4><img src="images/plakat_img1.png" alt="plakat" class="width3">
+            </div>
+            <div class="back img img-ver back-ver">
+              <h4>Плакати</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color4">
+            <div class="front img"><img src="images/broshura.png" alt="broshura" class="width4">
+              <h4>Брошури</h4>
+            </div>
+            <div class="back img back-hor">
+              <h4>Брошури</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color5">
+            <div class="front img img-ver"><img src="images/buclet.png" alt="buclet" class="width2">
+              <h4>Буклети</h4>
+            </div>
+            <div class="back img img-ver back-ver">
+              <h4>Буклети</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color6">
+            <div class="front img"><img src="images/papka.png" alt="papka" class="width3">
+              <h4>Папки</h4>
+            </div>
+            <div class="back img back-hor">
+              <h4>Папки</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color7">
+            <div class="front img img-ver">
+              <h4>Конверти</h4><img src="images/konvert.png" alt="konvert" class="width1">
+            </div>
+            <div class="back img img-ver back-ver">
+              <h4>Конверти</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item color8">
+            <div class="front img">
+              <h4>Каталоги</h4><img src="images/katalog.png" alt="katalog" class="width3">
+            </div>
+            <div class="back img back-hor">
+              <h4>Каталоги</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+            </div>
+          </div>
+          <div class="wrap item item-hor color9">
+            <div class="front img img-ver"><img src="images/flayer.png" alt="flayer" class="width5 img-9-title">
               <h4>Флаєри</h4>
+            </div>
+            <div class="back img img-ver back-ver">
+              <div class="back-item9-p">
+                <p>термін виконання:  від 3 днів</p>
+                <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+              </div>
+              <div class="back-item9-h">
+                <h4>Флаєри</h4>
+              </div>
+            </div>
+          </div>
+          <div class="wrap item color10">
+            <div class="front img"><img src="images/otkritka.png" alt="otkritka" class="width2">
+              <h4>Листівки</h4>
+            </div>
+            <div class="back img back-hor">
+              <h4>Листівки</h4>
+              <p>термін виконання:  від 3 днів</p>
+              <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
             </div>
           </div>
         </div>
-        <div class="wrap item color10">
-          <div class="front img"><img src="images/otkritka.png" alt="otkritka" class="width2">
-            <h4>Листівки</h4>
-          </div>
-          <div class="back img back-hor">
-            <h4>Листівки</h4>
-            <p>термін виконання:  від 3 днів</p>
-            <p>від 49 грн за 100 штук</p><a href="#myModal" role="button" data-toggle="modal"><img src="images/buy.png" alt="buy" class="buy-icon"></a>
+      </div>
+      <div id="services" class="section section-services">
+        <div class="container">
+          <h3 class="section-title">Наші послуги</h3>
+          <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+              <li><a href="#"><img src="/images/tipleft.jpg" alt="tipleft"></a>
+                <div class="sb-description">
+                  <h3>Широкоформатний друк</h3>
+                </div>
+              </li>
+              <li><a href="#"><img src="/images/offset.jpg" alt="ofset"></a>
+                <div class="sb-description">
+                  <h3>Офсетний друк</h3>
+                </div>
+              </li>
+              <li><a href="#"><img src="/images/digitalprint.jpg" alt="tipleft"></a>
+                <div class="sb-description">
+                  <h3>Цифровий друк</h3>
+                </div>
+              </li>
+              <li><a href="#"><img src="/images/tipleft.jpg" alt="tipleft"></a>
+                <div class="sb-description">
+                  <h3>Широкоформатний друк</h3>
+                </div>
+              </li>
+              <li><a href="#"><img src="/images/offset.jpg" alt="ofset"></a>
+                <div class="sb-description">
+                  <h3>Офсетний друк</h3>
+                </div>
+              </li>
+              <li><a href="#"><img src="/images/digitalprint.jpg" alt="tipleft"></a>
+                <div class="sb-description">
+                  <h3>Цифровий друк</h3>
+                </div>
+              </li>
+            </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows"><a href="#">Next</a><a href="#">Previous</a></div>
+            <div id="nav-dots" class="nav-dots"><span class="nav-dot-current"></span><span></span><span></span><span></span><span></span><span></span></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="block2"></div>
-    </div>
+      <div id="contacts" class="section section-contacts">
+        <div class="container">
+          <h3 class="section-title">Ми знаходимось:</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="contacts-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6318.190776742636!2d25.965681404639923!3d48.25529086573264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1482093082638" width="560" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="contacts-text">
+                <div class="row contact-text-line">
+                  <div class="col-md-4">
+                    <h5>Наша адреса:</h5>
+                  </div>
+                  <div class="col-md-8">
+                    <p>00000 м.Чернівці вул.Головна 000/00</p>
+                  </div>
+                </div>
+                <div class="row contact-text-line">
+                  <div class="col-md-4">
+                    <h5>Наші телефони:</h5>
+                  </div>
+                  <div class="col-md-8"><a href="tel:0000000000">(000) 000-00-00 </a><br><a href="tel:0000000000">(000) 000-00-00 </a></div>
+                </div>
+                <div class="row contact-text-line">
+                  <div class="col-md-4">
+                    <h5>Наш e-mail:</h5>
+                  </div>
+                  <div class="col-md-8"><a href="mailto:example@example.com">example@example.com</a></div>
+                </div>
+                <div class="row contact-text-line">
+                  <div class="col-md-4">
+                    <h5>Ми в мережах:</h5>
+                  </div>
+                  <div class="col-md-8"><a href="http://google.com/+" class="socicon-btn">
+                      <svg width="66px" height="42px" viewbox="0 0 66 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
+                        <title>GooglePlus-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Color-" transform="translate(-391.000000, -163.000000)" fill="#F93F2D">
+                            <path id="GooglePlus" d="M449.735849,180.257426 L449.735849,172.980198 L444.54717,172.980198 L444.54717,180.257426 L437.075472,180.257426 L437.075472,185.455446 L444.54717,185.455446 L444.54717,192.940594 L449.735849,192.940594 L449.735849,185.455446 L457,185.455446 L457,180.257426 L449.735849,180.257426 L449.735849,180.257426 Z M411.962264,179.841584 L411.962264,188.158416 C411.962264,188.158416 420.015925,188.147604 423.29517,188.147604 C421.519396,193.539198 418.758189,196.475248 411.962264,196.475248 C405.084774,196.475248 399.716981,190.889871 399.716981,184 C399.716981,177.110129 405.084774,171.524752 411.962264,171.524752 C415.598491,171.524752 417.946887,172.805129 420.101019,174.589713 C421.825321,172.862307 421.681283,172.616129 426.068208,168.465822 C422.344189,165.070059 417.394604,163 411.962264,163 C400.385075,163 391,172.40197 391,184 C391,195.597822 400.385075,205 411.962264,205 C429.266925,205 433.496528,189.90495 432.09434,179.841584 L411.962264,179.841584 L411.962264,179.841584 Z"></path>
+                          </g>
+                        </g>
+                      </svg></a><a href="http://www.facebook.com/" class="socicon-btn">
+                      <svg width="48px" height="48px" viewbox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
+                        <title>Facebook-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                            <path id="Facebook" d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"></path>
+                          </g>
+                        </g>
+                      </svg></a><a href="http://www.linkedin.com/" class="socicon-btn">
+                      <svg width="44px" height="40px" viewbox="0 0 44 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
+                        <title>LinkedIn-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Color-" transform="translate(-702.000000, -265.000000)" fill="#007EBB">
+                            <path id="LinkedIn" d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"></path>
+                          </g>
+                        </g>
+                      </svg></a><a href="http://twitter.com/" class="socicon-btn">
+                      <svg width="48px" height="40px" viewbox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
+                        <title>Twitter-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Color-" transform="translate(-300.000000, -164.000000)" fill="#00AAEC">
+                            <path id="Twitter" d="M348,168.735283 C346.236309,169.538462 344.337383,170.081618 342.345483,170.324305 C344.379644,169.076201 345.940482,167.097147 346.675823,164.739617 C344.771263,165.895269 342.666667,166.736006 340.418384,167.18671 C338.626519,165.224991 336.065504,164 333.231203,164 C327.796443,164 323.387216,168.521488 323.387216,174.097508 C323.387216,174.88913 323.471738,175.657638 323.640782,176.397255 C315.456242,175.975442 308.201444,171.959552 303.341433,165.843265 C302.493397,167.339834 302.008804,169.076201 302.008804,170.925244 C302.008804,174.426869 303.747139,177.518238 306.389857,179.329722 C304.778306,179.280607 303.256911,178.821235 301.9271,178.070061 L301.9271,178.194294 C301.9271,183.08848 305.322064,187.17082 309.8299,188.095341 C309.004402,188.33225 308.133826,188.450704 307.235077,188.450704 C306.601162,188.450704 305.981335,188.390033 305.381229,188.271578 C306.634971,192.28169 310.269414,195.2026 314.580032,195.280607 C311.210424,197.99061 306.961789,199.605634 302.349709,199.605634 C301.555203,199.605634 300.769149,199.559408 300,199.466956 C304.358514,202.327194 309.53689,204 315.095615,204 C333.211481,204 343.114633,188.615385 343.114633,175.270495 C343.114633,174.831347 343.106181,174.392199 343.089276,173.961719 C345.013559,172.537378 346.684275,170.760563 348,168.735283"></path>
+                          </g>
+                        </g>
+                      </svg></a><a href="http://youtube.com/" class="socicon-btn">
+                      <svg width="48px" height="34px" viewbox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
+                        <title>Youtube-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#CE1312">
+                            <path id="Youtube" d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z"></path>
+                          </g>
+                        </g>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo"></div>
-        <p class="footer-copyright">2016 © All rights reserved</p>
+        <div class="container-line container-line-hor container-line-hor-first hidden-xs hidden-sm"></div>
+        <div class="footer-logo">
+          <p class="footer-copyright">2016 © All rights reserved</p>
+        </div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
