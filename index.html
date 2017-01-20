@@ -54,12 +54,12 @@
         </div>
       </div>
     </div>
-    <header class="header navbar">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header"><a href="#" class="navbar-logo hidden-xs hidden-sm"><img src="/images/fly.png" alt="header picture"></a>
-          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed">Menu</button>
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">Menu</button><a href="#" class="navbar-logo hidden-xs hidden-sm"><img src="/images/fly.png" alt="header picture"></a>
         </div>
-        <div id="navbar-collapse" class="navbar-collapse navbar-fixed-top">
+        <div id="navbar-collapse" aria-expanded="false" style="height: 1px" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home">Головна</a></li>
             <li><a href="#products">Товари</a></li>
@@ -68,7 +68,7 @@
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
     <main>
       <div id="home" class="section section-home">
         <div class="container">
@@ -245,7 +245,7 @@
         <div class="container">
           <h3 class="section-title">Ми знаходимось:</h3>
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="hidden-xs col-xs-12 col-sm-12 col-md-6">
               <div class="contacts-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6318.190776742636!2d25.965681404639923!3d48.25529086573264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1482093082638" width="560" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
               </div>
@@ -253,30 +253,30 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="contacts-text">
                 <div class="row contact-text-line">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
                     <h5>Наша адреса:</h5>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-xs-8 col-sm-8 col-md-8">
                     <p>00000 м.Чернівці вул.Головна 000/00</p>
                   </div>
                 </div>
                 <div class="row contact-text-line">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
                     <h5>Наші телефони:</h5>
                   </div>
-                  <div class="col-md-8"><a href="tel:0000000000">(000) 000-00-00 </a><br><a href="tel:0000000000">(000) 000-00-00 </a></div>
+                  <div class="col-xs-8 col-sm-8 col-md-8"><a href="tel:0000000000">(000) 000-00-00 </a><br><a href="tel:0000000000">(000) 000-00-00 </a></div>
                 </div>
                 <div class="row contact-text-line">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
                     <h5>Наш e-mail:</h5>
                   </div>
-                  <div class="col-md-8"><a href="mailto:example@example.com">example@example.com</a></div>
+                  <div class="col-xs-8 col-sm-8 col-md-8"><a href="mailto:example@example.com">example@example.com</a></div>
                 </div>
                 <div class="row contact-text-line">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
                     <h5>Ми в мережах:</h5>
                   </div>
-                  <div class="col-md-8"><a href="http://google.com/+" class="socicon-btn">
+                  <div class="col-xs-8 col-sm-8 col-md-8"><a href="http://google.com/+" class="socicon-btn">
                       <svg width="66px" height="42px" viewbox="0 0 66 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch-->
                         <title>GooglePlus-color</title>
@@ -343,7 +343,7 @@
       <div class="container">
         <div class="container-line container-line-hor container-line-hor-first hidden-xs hidden-sm"></div>
         <div class="footer-logo">
-          <p class="footer-copyright">2016 © All rights reserved</p>
+          <p class="footer-copyright">©2017 DTM design  All rights reserved</p>
         </div>
       </div>
     </footer>
