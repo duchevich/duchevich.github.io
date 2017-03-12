@@ -1,0 +1,20 @@
+{
+	"navbarNav": [
+		{
+			"navbarNavName": "Обо мне",
+			"navbarNavLink": "#"
+		},
+		{
+			"navbarNavName": "Портфолио",
+			"navbarNavLink": "#"
+		},
+		{
+			"navbarNavName": "Сертификаты",
+			"navbarNavLink": "#"
+		},
+		{
+			"navbarNavName": "Контакты",
+			"navbarNavLink": "#"
+		}
+	]
+}
