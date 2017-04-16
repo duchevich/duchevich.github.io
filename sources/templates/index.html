@@ -9,55 +9,41 @@
 <body>
 	@@include('navbar')
 	<main>
-		<section class="section-about">
-		<h2>Про мене</h2>
-		<img class="myphoto" src="images/myphoto.jpg" alt="">
-		<p>Доброго дня! Мене зовуть Тетяна, я - веб-розробник.</p>
-		<p></p>
-		</section>	
-		<section class="section-portfolio">
-		<h2>Моє портфоліо</h2>
-		<!--<div class="item">
-			<div class="left">
-				<img src="images/scrin1.png" alt="" title="">
-				<p><a href="">Перейти на сайт</a></p>	
-				<p><a href="">Подивитись код</a></p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="section-about">
+						<h2>Про мене</h2>
+						<img class="myphoto" src="images/myphoto.jpg" alt="">
+						<p>Доброго дня! Мене зовуть Тетяна, я - веб-розробник.</p>
+						<p></p>
+					</div>		
+				</div>
+				<div class="col-md-9">
+					<section class="section-portfolio">
+						<h2>Моє портфоліо</h2>
+						<script data-path="homepage" id="portfolio" type="text/x-handlebars-template">
+							{{#each pageContentPortfolio}}
+								<div class="slide">
+									<div class="item">
+									<div class="left">
+										<img src="images/{{contentImg}}" alt="{{contentImgAlt}}" title="{{contentImgTitle}}">
+										<p><a href="{{contentSite}}">Перейти на сайт</a></p>	
+										<p><a href="{{contentCode}}">Подивитись код</a></p>
+									</div>
+									<div class="right">
+										<p>{{contentName}}</p>
+										<p>{{contentAbout}}</p>
+										<p>{{contentData}}</p>
+									</div>
+								</div>
+								</div>
+							{{/each}}
+						</script>
+					</section>
+				</div>	
 			</div>
-			<div class="right">
-				<p>Иврит - это легко!</p>
-			</div>
-		</div> -->
-		
-			<script data-path="homepage" id="portfolio" type="text/x-handlebars-template">
-				{{#each pageContentPortfolio}}
-					<div class="item">
-						<div class="left">
-							<img src="images/{{contentImg}}" alt="{{contentImgAlt}}" title="{{contentImgTitle}}">
-							<p><a href="{{contentSite}}">Перейти на сайт</a></p>	
-							<p><a href="{{contentCode}}">Подивитись код</a></p>
-						</div>
-						<div class="right">
-							<p>{{contentName}}</p>
-							<p>{{contentAbout}}</p>
-							<p>{{contentData}}</p>
-						</div>
-					</div>
-					<hr>
-				{{/each}}
-			</script>
-		</section>
-		<section class="section-sertificate">
-		<h2>Сертифікати</h2>
-			<script data-path="homepage" id="sertificate" type="text/x-handlebars-template">
-				{{#each pageContent}}
-					<div>{{contentName}}</div>
-					<div>{{contentData}}</div>
-				{{/each}}
-			</script>
-		</section>
-		<section class="section-contacts">
-		
-		</section>
+		</div>
 	</main>
 	@@include('footer')
 	@@include('scripts')

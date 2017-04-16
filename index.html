@@ -1,27 +1,16 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="deccription" content="Сайт-визитка вэб-разработчика Дучевич Татьяны"><meta name="author" content="Tatyana"><meta name="keywords" content="HTML, CSS, JavaScript, PHP, web-разработка, верстка, лэндинг, Черновцы"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Sans:400&subset=latin,cyrillic"><link rel="stylesheet" href="styles.min.css"><script data-path="homepage" id="head" type="text/x-handlebars-template"><title>{{pageTitle}}</title></script></head><body><header><h1>Лендінг, розробка сайтів в Чернівцях</h1></header><main><section class="section-about"><h2>Про мене</h2><img class="myphoto" src="images/myphoto.jpg" alt=""><p>Доброго дня! Мене зовуть Тетяна, я - веб-розробник.</p><p></p></section><section class="section-portfolio"><h2>Моє портфоліо</h2><!--<div class="item">
-			<div class="left">
-				<img src="images/scrin1.png" alt="" title="">
-				<p><a href="">Перейти на сайт</a></p>	
-				<p><a href="">Подивитись код</a></p>
-			</div>
-			<div class="right">
-				<p>Иврит - это легко!</p>
-			</div>
-		</div> --><script data-path="homepage" id="portfolio" type="text/x-handlebars-template">{{#each pageContentPortfolio}}
-					<div class="item">
-						<div class="left">
-							<img src="images/{{contentImg}}" alt="{{contentImgAlt}}" title="{{contentImgTitle}}">
-							<p><a href="{{contentSite}}">Перейти на сайт</a></p>	
-							<p><a href="{{contentCode}}">Подивитись код</a></p>
-						</div>
-						<div class="right">
-							<p>{{contentName}}</p>
-							<p>{{contentAbout}}</p>
-							<p>{{contentData}}</p>
-						</div>
-					</div>
-					<hr>
-				{{/each}}</script></section><section class="section-sertificate"><h2>Сертифікати</h2><script data-path="homepage" id="sertificate" type="text/x-handlebars-template">{{#each pageContent}}
-					<div>{{contentName}}</div>
-					<div>{{contentData}}</div>
-				{{/each}}</script></section><section class="section-contacts"></section></main><script src="libs/jquery.min.js" defer="defer"></script><script src="libs/handlebars.min.js" defer="defer"></script><script src="scripts.min.js" defer="defer"></script></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="deccription" content="Сайт-визитка вэб-разработчика Дучевич Татьяны"><meta name="author" content="Tatyana"><meta name="keywords" content="HTML, CSS, JavaScript, PHP, web-разработка, верстка, лэндинг, Черновцы"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Sans:400&subset=latin,cyrillic"><!-- Latest compiled and minified CSS --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Optional theme --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><link rel="stylesheet" href="styles.min.css"><script data-path="homepage" id="head" type="text/x-handlebars-template"><title>{{pageTitle}}</title></script></head><body><header><h1>Лендінг, розробка сайтів в Чернівцях</h1></header><nav class="nav"><ul class="nav navbar-nav"><li><a class="color1" href="">Навички</a></li><li><a class="color2" href="">Портфоліо</a></li><li><a class="color3" href="">Освіта</a></li><li><a class="color4" href="">Сертифікати</a></li><li><a class="color5" href="">Контакти</a></li></ul></nav><div class="nav-line"><div class="line bcolor1"></div><div class="line bcolor2"></div><div class="line bcolor3"></div><div class="line bcolor4"></div><div class="line bcolor5"></div></div><main><div class="container-fluid"><div class="row"><div class="col-md-3"><div class="section-about"><h2>Про мене</h2><img class="myphoto" src="images/myphoto.jpg" alt=""><p>Доброго дня! Мене зовуть Тетяна, я - веб-розробник.</p><p></p></div></div><div class="col-md-9"><section class="section-portfolio"><h2>Моє портфоліо</h2><script data-path="homepage" id="portfolio" type="text/x-handlebars-template">{{#each pageContentPortfolio}}
+								<div class="slide">
+									<div class="item">
+									<div class="left">
+										<img src="images/{{contentImg}}" alt="{{contentImgAlt}}" title="{{contentImgTitle}}">
+										<p><a href="{{contentSite}}">Перейти на сайт</a></p>	
+										<p><a href="{{contentCode}}">Подивитись код</a></p>
+									</div>
+									<div class="right">
+										<p>{{contentName}}</p>
+										<p>{{contentAbout}}</p>
+										<p>{{contentData}}</p>
+									</div>
+								</div>
+								</div>
+							{{/each}}</script></section></div></div></div></main><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="libs/jquery.min.js" defer="defer"></script><script src="libs/handlebars.min.js" defer="defer"></script><!-- Latest compiled and minified JavaScript --><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="scripts.min.js" defer="defer"></script></body></html>

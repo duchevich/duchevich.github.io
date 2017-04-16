@@ -13,20 +13,27 @@ body{
 }
 header{
 	background: #162238;
-	//margin: 0;
-	//display: block;
 	h1{
 		margin: 0;
 		padding: 20px;
 		color: white;
 	}
 }
+nav{
+	background: #162238;
+	ul{
+		width: 100%;
+		text-align: center;
+	}
+	li{
+		width: 20%;
+	}
+}
 .section-about{
 	background: #4d4e5c;
-	width: 600px;
 	height: 1000px;
-	float: left;
 	text-align: center;
+	margin-left: -15px;
 	h2, p{
 		color: white;	
 	}
@@ -37,11 +44,16 @@ header{
 	}
 }
 .section-portfolio{
-	background: #c7cfdd;
-	width: auto;
+
 	.item{
+		//display: none;
+		background: #c7cfdd;
 		height: 400px;
+		border:1px solid black;
+		position: relative;
+		float: left
 	}
+	
 	.left{
 		float: left;
 		img{
@@ -52,16 +64,18 @@ header{
 			text-align: center;
 			width: inherit;	
 		}
-		
 	}
 	.right{
 		float: left;
+		width: 500px;
 		text-align: center;
 			p{
 			margin-top: 20px;		
-			}	
-		}
+			}
+		}	
 }
+
+
 .section-sertificate{
 	background: #cebfc4;
 }
