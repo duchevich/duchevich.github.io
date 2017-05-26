@@ -51,5 +51,55 @@
 			"contentSite": "https://github.com/duchevich/parser",
 			"contentCode": "https://github.com/duchevich/parser"
 		}
+	],
+	"pageContentSertificate": [
+		{
+			"contentImg": "sert1.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу HTML, CSS and JavaScript",
+			"contentImgAlt": "HTML, CSS and JavaScript",
+			"contentName": "HTML, CSS and JavaScript",
+			"contentData": "від Гонконгського університету науки та технологій на платформі Coursera",
+			"contentTime": "Дата видачі сертифікату: 31 жовтня 2016 року"
+		},
+{
+			"contentImg": "sert2.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу Front-End Web UI Frameworks and Tools",
+			"contentImgAlt": "Front-End Web UI Frameworks and Tools",
+			"contentName": "Front-End Web UI Frameworks and Tools",
+			"contentData": "від Гонконгського університету науки та технологій на платформі Coursera",
+			"contentTime": "Дата видачі сертифікату: 21 листопада 2016 рокуу"
+		},
+		{
+			"contentImg": "sert5.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу Основи Web UI розробки",
+			"contentImgAlt": "Основи Web UI розробки",
+			"contentName": "Основи Web UI розробки",
+			"contentData": "наданий викладачем Lviv IT School Світланою Шабаранською через платформу масових відкритих онлайн-курсів Prometheus",
+			"contentTime": "Дата видачі сертифікату: 17 жовтня 2016 г"
+		},
+		{
+			"contentImg": "sert4.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу Основи тестування програмного забезпечення",
+			"contentImgAlt": "Основи тестування програмного забезпечення",
+			"contentName": "Основи тестування програмного забезпечення",
+			"contentData": "наданий викладачем Lviv IT School Юрієм Кутельмахом та Денисом Сороханом через платформу масових відкритих онлайн-курсів Prometheus",
+			"contentTime": "Дата видачі сертифікату: 5 липня  2016 р"
+		},
+		{
+			"contentImg": "sert3.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу Основи інформаційної безпеки",
+			"contentImgAlt": "Основи інформаційної безпеки",
+			"contentName": "Основи інформаційної безпеки",
+			"contentData": "наданий викладачем Zillya! Антивірус Олегом Сичем через платформу масових відкритих онлайн-курсів Prometheus",
+			"contentTime": "Дата видачі сертифікату: 22 серпня 2016 року"
+		},
+		{
+			"contentImg": "sert6.png",
+			"contentImgTitle": "Сертифікат про закінчення курсу Підприємництво. Власна справа в Україні",
+			"contentImgAlt": "Підприємництво. Власна справа в Україні",
+			"contentName": "Підприємництво. Власна справа в Україні",
+			"contentData": "наданий викладачем Києво-Могилянської бізнес-школи Олексієм Геращенком через платформу масових відкритих онлайн-курсів Prometheus",
+			"contentTime": "Дата видачі сертифікату: 28 червня 2016 року"
+		}
 	]
 }
