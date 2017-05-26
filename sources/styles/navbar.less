@@ -1,3 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    //background: #eaece9;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to left, rgba(38, 53, 96, 0.1) 10%, rgba(38, 53, 96, 0) 80%);
+    //height: 100vh;
+}
+.container{
+    width: 90%;
+    height: 100vh; 
+}
+.back{
+    position:absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    .circle1{
+        height: 80vh;
+        width: 80vh;
+        border-radius: 50%;
+        border: 3px solid #15d2cc;
+        margin-left: 75vw;
+        margin-top: 70vh;
+        opacity: 0.3;
+    }
+}
+/*_____ header _____*/
+header{
+    min-height: 15vh;
+}
+.logo{
+    padding-top: 50px;
+    font-size: 40px;
+    margin-bottom: 0;
+    color: @c-primary;
+}
+.sub-logo{
+    color: @c-success;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+.back-menu{
+	background: linear-gradient(to bottom, #ffffff, rgb(38, 53, 96));
+	height: 100vh;
+	width: 40vw;
+	position: absolute;
+    overflow: hidden;
+    left: -40%;
+    transition: all 1s ease-in-out;
+    z-index: 999;
+}
+.back-menu-active{
+    transform: translate(100%, 0);
+    transition: all 1s ease-in-out;
+}
+.circle1{
+	height: 15vh;
+	width: 15vh;
+	border-radius: 50%;
+	border: 3px solid #15d2cc;
+	margin-left: 2vw;
+	margin-top: 5vh;
+	opacity: 0.3;
+}
+.circle2{
+	height: 30vh;
+	width: 30vh;
+	margin-left: 20vw;
+	margin-top: 70vh;
+	border-radius: 50%;
+	border: 3px solid #15d2cc;
+	opacity: 0.1;
+}
+
+/*_____ menu _____*/
+.line{
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: @c-primary;
+    margin-bottom: 5px;
+}
+#menu:hover .line{
+    background:  @c-primary;
+    opacity: 0.4;
+}
+#menu{
+    cursor: pointer;
+    position: absolute;
+    width: 130px;
+    z-index: 999;
+    top: 1vh;
+}
+.menu-list{
+    position: absolute;
+    top: -25px;
+    left: 100px;
+    list-style-type: none;
+    overflow: hidden;
+    width: 0;
+    transition: all 1s ease-in-out;
+}
+.menu-list a{
+    color: white;
+    padding: 20px 20px;
+    display: block;
+    white-space: nowrap;
+    font-size: 18px;
+}
+.menu-list a:hover{
+    opacity: 0.5;
+    text-decoration: none;
+    
+}
+.menu-list-active{
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
+.close{
+    position: absolute;
+    font-size: 40px;
+    padding: 0 4px;
+    color: white;
+    font-family: verbana;
+    opacity: 1;
+    display: none;
+    top: -10px;
+}
+.close:hover{
+    color: white;
+}
+.gamburger_active{
+    display: none;
+}
+.close_active{
+    display: block;
+}
+
+/*_____ social buttons _____*/
+.icon{
+    text-align: right;
+    font-size: 23px;
+    padding: 10px;
+}
+.icon a{
+    color: @c-primary;
+}
+.icon a:hover{
+    color: @c-success;
+}
+/*_____ navigation _____*/
+#main, 
+#about, 
+#portfolio, 
+#sertificates, 
+#contacts{
+    display: none;
+}
+#main:target,
+#about:target,
+#portfolio:target, 
+#sertificates:target, 
+#contacts:target{
+    display: block;
+}
+
+footer{
+    position: absolute;
+    font-size: 14px;
+    bottom:10px;
+    right: 20px;
+    color: white;
+}
+
 .navbar{
 	
 }
@@ -9,97 +189,9 @@
 .navbar-nav{
 	li{
 		a{
-			font-size: 18px;
-		}
-		a{
 			&:hover,
 			&:focus,
-			&:active{
-				color: white;
-				opacity: 0.8;
-			}
-		}
-		a.color1{
-			&:hover,
-			&:focus,
-			&:active{
-				background: #FFBB00;
-				
-			}
-		}
-		a.color2{
-			&:hover,
-			&:focus,
-			&:active{
-				background: #9CEE00;
-				
-			}
-		}
-		a.color3{
-			&:hover,
-			&:focus,
-			&:active{
-				background: #F20026;
-				
-			}
-		}
-		a.color4{
-			&:hover,
-			&:focus,
-			&:active{
-				background: #131FB5;
-				
-			}
-		}
-		a.color5{
-			&:hover,
-			&:focus,
-			&:active{
-				background: #7163BD;
-				
-			}
+			&:active{}
 		}
 	}
-}
-.nav-line{
-	
-}
-.line{
-	width: 20%;
-	height: 5px;
-	float: left;
-}
-.color1{
-	color: #FFBB00;
-}
-
-.color2{
-	color: #9CEE00;
-}
-.color3{
-	color: #F20026;
-}
-.color4{
-	color: #131FB5;
-}
-.color5{
-	color: #7163BD;
-}
-.bcolor1{
-	background: #FFBB00;
-}
-.bcolor2{
-	background: #9CEE00;
-}
-.bcolor3{
-	background: #F20026;
-}
-.bcolor4{
-	background: #131FB5;
-}
-.bcolor5{
-	background: #7163BD;
-}
-li>a:hover{
-	background: #FFBB00;
 }

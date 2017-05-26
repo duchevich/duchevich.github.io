@@ -1,20 +1,24 @@
 {
 	"navbarNav": [
 		{
-			"navbarNavName": "Обо мне",
-			"navbarNavLink": "#"
+			"navbarNavName": "Головна",
+			"navbarNavLink": "#main"
 		},
 		{
-			"navbarNavName": "Портфолио",
-			"navbarNavLink": "#"
+			"navbarNavName": "Про мене",
+			"navbarNavLink": "#about"
 		},
 		{
-			"navbarNavName": "Сертификаты",
-			"navbarNavLink": "#"
+			"navbarNavName": "Портфоліо",
+			"navbarNavLink": "#portfolio"
 		},
 		{
-			"navbarNavName": "Контакты",
-			"navbarNavLink": "#"
+			"navbarNavName": "Освіта",
+			"navbarNavLink": "#sertificates"
+		},
+		{
+			"navbarNavName": "Контакти",
+			"navbarNavLink": "#contacts"
 		}
 	]
 }

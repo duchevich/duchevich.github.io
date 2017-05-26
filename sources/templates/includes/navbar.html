@@ -1,20 +1,39 @@
-<header>
-	<h1>Лендінг, розробка сайтів в Чернівцях</h1>	
-	
-</header>
-<nav class="nav">
-	<ul class="nav navbar-nav">
-		<li><a class="color1" href="">Навички</a></li>
-		<li><a class="color2" href="">Портфоліо</a></li>
-		<li><a class="color3" href="">Освіта</a></li>
-		<li><a class="color4" href="">Сертифікати</a></li>
-		<li><a class="color5" href="">Контакти</a></li>
-	</ul>
-</nav>
-<div class="nav-line">
-	<div class="line bcolor1"></div>
-	<div class="line bcolor2"></div>
-	<div class="line bcolor3"></div>
-	<div class="line bcolor4"></div>
-	<div class="line bcolor5"></div>
+<div class="back-menu">
+	<div class="circle1"></div>
+    <div class="circle2"></div>
+     <footer>
+          <p>Duchevych Tetyana &copy; 2017</p>
+      </footer>
 </div>
+<div class="back">
+  <div class="circle1"></div>
+</div>
+ <div class="container">
+     <header>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-2">
+             <h1 class="logo">Тетяна Дучевич</h1>
+             <h2 class="sub-logo">junior web-developer</h2>
+            </div>
+        </div>
+     </header>
+      <div class="row">
+          <div class="col-lg-1">
+               <div id="menu">
+                  <div class="gamburger">
+                       <div class="line"></div>
+                       <div class="line"></div>
+                       <div class="line"></div>
+                    </div>
+                    <div class="close">
+                        <span> &times;</span>
+                    </div>
+                   <ul class="menu-list">
+                   <script data-path="base" id="navbar" type="text/x-handlebars-template">
+						{{#each navbarNav}}
+							<li><a href="{{navbarNavLink}}">{{navbarNavName}}</a></li>
+						{{/each}}
+					</script>
+                    </ul>    
+               </div>              
+          </div>
