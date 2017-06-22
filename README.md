@@ -1,5 +1,6 @@
-# BOOTSTRAP BREAKPOINTS
-@media (max-width: 1200px) {}
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
-@media (max-width: 460px) {}
+Сайт-портфоліо
+
+html, css,
+bootstrap, jQuery,
+node.js, gulp, less 
+
